@@ -17,12 +17,22 @@ public class ModItems {
 
 
     public static final Item WISPYS_CHAIR = registerItem("wispys_chair",
-            new SwordItem(ToolMaterial.NETHERITE, 50, 0, new Item.Settings()
+            new SwordItem(ToolMaterial.NETHERITE, 20, 0, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "wispys_chair")))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
                     tooltip.add(Text.translatable("tooltip.wispyschairmod.wispyschair.tooltip"));
                     tooltip.add(Text.translatable("tooltip.wispyschairmod.wispyschair.tooltip2"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
+    public static final Item CROC = registerItem("croc",
+            new SwordItem(ToolMaterial.NETHERITE, 30, 0, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "croc")))){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.wispyschairmod.croc.tooltip"));
                     super.appendTooltip(stack, context, tooltip, type);
                 }
             });
@@ -36,6 +46,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(WISPYS_CHAIR);
+            entries.add(CROC);
         });
     }
 }

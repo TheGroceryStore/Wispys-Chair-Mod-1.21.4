@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:nether_star"
+  ],
+  "result": {
+    "count": 1,
+    "id": "wispyschairmod:croc"
+  }
+}

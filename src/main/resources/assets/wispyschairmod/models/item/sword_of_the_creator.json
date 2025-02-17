@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "wispyschairmod:item/croc"
+    "layer0": "wispyschairmod:item/sword_of_the_creator"
   }
 }

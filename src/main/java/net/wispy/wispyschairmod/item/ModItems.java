@@ -27,12 +27,12 @@ public class ModItems {
                 }
             });
 
-    public static final Item CROC = registerItem("croc",
+    public static final Item SWORD_OF_THE_CREATOR = registerItem("sword_of_the_creator",
             new SwordItem(ToolMaterial.NETHERITE, 30, 0, new Item.Settings()
-                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "croc")))){
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "sword_of_the_creator")))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-                    tooltip.add(Text.translatable("tooltip.wispyschairmod.croc.tooltip"));
+                    tooltip.add(Text.translatable("tooltip.wispyschairmod.sword_of_the_creator.tooltip"));
                     super.appendTooltip(stack, context, tooltip, type);
                 }
             });
@@ -46,7 +46,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(WISPYS_CHAIR);
-            entries.add(CROC);
+            entries.add(SWORD_OF_THE_CREATOR);
         });
     }
 }

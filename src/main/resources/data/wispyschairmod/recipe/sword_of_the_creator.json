@@ -2,12 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:iron_ingot",
-    "minecraft:gold_ingot",
-    "minecraft:nether_star"
+    "minecraft:diamond_sword",
+    "minecraft:bone"
   ],
   "result": {
     "count": 1,
-    "id": "wispyschairmod:croc"
+    "id": "wispyschairmod:sword_of_the_creator"
   }
 }

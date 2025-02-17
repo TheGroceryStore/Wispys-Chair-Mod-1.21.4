@@ -4,21 +4,21 @@
     "property": "minecraft:display_context",
     "fallback": {
       "type": "minecraft:model",
-      "model": "wispyschairmod:item/croc_3d"
+      "model": "wispyschairmod:item/sword_of_the_creator_3d"
     },
     "cases": [
       {
         "when": "gui",
         "model": {
           "type": "minecraft:model",
-          "model": "wispyschairmod:item/croc"
+          "model": "wispyschairmod:item/sword_of_the_creator"
         }
       },
       {
         "when": "ground",
         "model": {
           "type": "minecraft:model",
-          "model": "wispyschairmod:item/croc"
+          "model": "wispyschairmod:item/sword_of_the_creator"
         }
       }
     ]

@@ -17,7 +17,7 @@ public class ModItems {
 
 
     public static final Item WISPYS_CHAIR = registerItem("wispys_chair",
-            new SwordItem(ToolMaterial.NETHERITE, 20, 0, new Item.Settings()
+            new SwordItem(ToolMaterial.IRON, 10, 0, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "wispys_chair")))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -28,11 +28,31 @@ public class ModItems {
             });
 
     public static final Item SWORD_OF_THE_CREATOR = registerItem("sword_of_the_creator",
-            new SwordItem(ToolMaterial.NETHERITE, 30, 0, new Item.Settings()
+            new SwordItem(ToolMaterial.NETHERITE, 10, 0, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "sword_of_the_creator")))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
                     tooltip.add(Text.translatable("tooltip.wispyschairmod.sword_of_the_creator.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
+    public static final Item FERMI_PARADOX_ANSWER = registerItem("fermi_paradox_answer",
+            new SwordItem(ToolMaterial.NETHERITE, 8, -2, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "fermi_paradox_answer")))){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.wispyschairmod.fermi_paradox_answer.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
+    public static final Item PRIZE_WEAPON = registerItem("prize_weapon",
+            new SwordItem(ToolMaterial.IRON, 8, -1, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "prize_weapon")))){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.wispyschairmod.prize_weapon.tooltip"));
                     super.appendTooltip(stack, context, tooltip, type);
                 }
             });
@@ -47,6 +67,8 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(WISPYS_CHAIR);
             entries.add(SWORD_OF_THE_CREATOR);
+            entries.add(FERMI_PARADOX_ANSWER);
+            entries.add(PRIZE_WEAPON);
         });
     }
 }

@@ -57,6 +57,16 @@ public class ModItems {
                 }
             });
 
+    public static final Item PRIZE_STICK = registerItem("prize_stick",
+            new SwordItem(ToolMaterial.WOOD, 4, 1, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "prize_stick")))){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.wispyschairmod.prize_stick.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(WispysChairMod.MOD_ID, name), item);
     }
@@ -69,6 +79,7 @@ public class ModItems {
             entries.add(SWORD_OF_THE_CREATOR);
             entries.add(FERMI_PARADOX_ANSWER);
             entries.add(PRIZE_WEAPON);
+            entries.add(PRIZE_STICK);
         });
     }
 }

@@ -3,10 +3,12 @@
   "item.wispyschairmod.sword_of_the_creator": "The sword of the creator",
   "item.wispyschairmod.fermi_paradox_answer": "Fermi Paradox Answer",
   "item.wispyschairmod.prize_weapon": "Prize Weapon",
+  "item.wispyschairmod.prize_stick": "Prize Stick",
 
   "tooltip.wispyschairmod.wispyschair.tooltip": "§oNot comfortable to actually sit on,§r",
   "tooltip.wispyschairmod.wispyschair.tooltip2": "§obut it a great weapon!§r",
   "tooltip.wispyschairmod.sword_of_the_creator.tooltip": "§oThe beginning§r",
   "tooltip.wispyschairmod.fermi_paradox_answer.tooltip": "§oAnd here we are!§r",
-  "tooltip.wispyschairmod.prize_weapon.tooltip": "§oOnly slightly late§r"
+  "tooltip.wispyschairmod.prize_weapon.tooltip": "§oOnly slightly late§r",
+  "tooltip.wispyschairmod.prize_stick.tooltip": "§oNot sure which one from the picture you wanted so you're getting both§r"
 }

@@ -4,11 +4,14 @@
   "item.wispyschairmod.fermi_paradox_answer": "Fermi Paradox Answer",
   "item.wispyschairmod.prize_weapon": "Prize Weapon",
   "item.wispyschairmod.prize_stick": "Prize Stick",
+  "item.wispyschairmod.warden_sandwich": "Warden Sandwich",
+
 
   "tooltip.wispyschairmod.wispyschair.tooltip": "§oNot comfortable to actually sit on,§r",
   "tooltip.wispyschairmod.wispyschair.tooltip2": "§obut it a great weapon!§r",
   "tooltip.wispyschairmod.sword_of_the_creator.tooltip": "§oThe beginning§r",
   "tooltip.wispyschairmod.fermi_paradox_answer.tooltip": "§oAnd here we are!§r",
   "tooltip.wispyschairmod.prize_weapon.tooltip": "§oOnly slightly late§r",
-  "tooltip.wispyschairmod.prize_stick.tooltip": "§oNot sure which one from the picture you wanted so you're getting both§r"
+  "tooltip.wispyschairmod.prize_stick.tooltip": "§oNot sure which one from the picture you wanted so you're getting both§r",
+  "tooltip.wispyschairmod.warden_sandwich.tooltip": "§oHungy§r"
 }

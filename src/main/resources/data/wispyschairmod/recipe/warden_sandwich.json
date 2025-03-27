@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:sculk_catalyst",
+    "minecraft:bread",
+    "minecraft:apple"
+  ],
+  "result": {
+    "count": 64,
+    "id": "wispyschairmod:warden_sandwich"
+  }
+}

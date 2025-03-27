@@ -67,6 +67,16 @@ public class ModItems {
                 }
             });
 
+    public static final Item WARDEN_SANDWICH = registerItem("warden_sandwich", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "warden_sandwich")))
+            .food(ModFoodComponents.WARDEN_SANDWICH, ModFoodComponents.WARDEN_SANDWICH_EFFECT)){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.wispyschairmod.warden_sandwich.tooltip"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(WispysChairMod.MOD_ID, name), item);
     }
@@ -80,6 +90,9 @@ public class ModItems {
             entries.add(FERMI_PARADOX_ANSWER);
             entries.add(PRIZE_WEAPON);
             entries.add(PRIZE_STICK);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(WARDEN_SANDWICH);
         });
     }
 }

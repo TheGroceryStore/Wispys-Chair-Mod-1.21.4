@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type" : "minecraft:select",
+    "property": "minecraft:display_context",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "wispyschairmod:item/the_end_3d"
+    },
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "minecraft:model",
+          "model": "wispyschairmod:item/the_end"
+        }
+      },
+      {
+        "when": "ground",
+        "model": {
+          "type": "minecraft:model",
+          "model": "wispyschairmod:item/the_end"
+        }
+      }
+    ]
+  }
+}

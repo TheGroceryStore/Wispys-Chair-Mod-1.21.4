@@ -5,13 +5,23 @@
   "item.wispyschairmod.prize_weapon": "Prize Weapon",
   "item.wispyschairmod.prize_stick": "Prize Stick",
   "item.wispyschairmod.warden_sandwich": "Warden Sandwich",
+  "item.wispyschairmod.the_beginning": "The Beginning",
+  "item.wispyschairmod.the_end": "The End",
+  "item.wispyschairmod.ollie": "Ollie",
+  "item.wispyschairmod.knight": "Knight",
+  "item.wispyschairmod.burger": "Burger",
 
 
   "tooltip.wispyschairmod.wispyschair.tooltip": "§oNot comfortable to actually sit on,§r",
   "tooltip.wispyschairmod.wispyschair.tooltip2": "§obut it a great weapon!§r",
-  "tooltip.wispyschairmod.sword_of_the_creator.tooltip": "§oThe beginning§r",
+  "tooltip.wispyschairmod.sword_of_the_creator.tooltip": "§oSuspiciously bone-like§r",
   "tooltip.wispyschairmod.fermi_paradox_answer.tooltip": "§oAnd here we are!§r",
   "tooltip.wispyschairmod.prize_weapon.tooltip": "§oOnly slightly late§r",
   "tooltip.wispyschairmod.prize_stick.tooltip": "§oNot sure which one from the picture you wanted so you're getting both§r",
-  "tooltip.wispyschairmod.warden_sandwich.tooltip": "§oHungy§r"
+  "tooltip.wispyschairmod.warden_sandwich.tooltip": "§oHungy§r",
+  "tooltip.wispyschairmod.the_beginning.tooltip": "§oThe essence of the beginning§r",
+  "tooltip.wispyschairmod.the_end.tooltip": "§oThe essence of the end§r",
+  "tooltip.wispyschairmod.ollie.tooltip": "§oBig boy!§r",
+  "tooltip.wispyschairmod.knight.tooltip": "§oThe Creature!§r",
+  "tooltip.wispyschairmod.burger.tooltip": "§oHambaga§r"
 }

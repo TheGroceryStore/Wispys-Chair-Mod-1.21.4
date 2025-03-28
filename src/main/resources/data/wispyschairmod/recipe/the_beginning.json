@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:diamond_sword",
+    "minecraft:coal",
+    "minecraft:nether_star"
+  ],
+  "result": {
+    "count": 1,
+    "id": "wispyschairmod:the_beginning"
+  }
+}

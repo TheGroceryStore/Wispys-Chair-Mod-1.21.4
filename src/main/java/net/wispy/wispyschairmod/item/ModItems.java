@@ -17,7 +17,7 @@ public class ModItems {
 
 
     public static final Item WISPYS_CHAIR = registerItem("wispys_chair",
-            new SwordItem(ToolMaterial.IRON, 10, 0, new Item.Settings()
+            new SwordItem(ToolMaterial.IRON, 12, 0, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "wispys_chair")))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -28,7 +28,7 @@ public class ModItems {
             });
 
     public static final Item SWORD_OF_THE_CREATOR = registerItem("sword_of_the_creator",
-            new SwordItem(ToolMaterial.NETHERITE, 10, 0, new Item.Settings()
+            new SwordItem(ToolMaterial.NETHERITE, 8, 0, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "sword_of_the_creator")))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -38,7 +38,7 @@ public class ModItems {
             });
 
     public static final Item FERMI_PARADOX_ANSWER = registerItem("fermi_paradox_answer",
-            new SwordItem(ToolMaterial.NETHERITE, 8, -2, new Item.Settings()
+            new SwordItem(ToolMaterial.NETHERITE, 9, -2, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "fermi_paradox_answer")))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -67,12 +67,62 @@ public class ModItems {
                 }
             });
 
+    public static final Item THE_BEGINNING = registerItem("the_beginning",
+            new SwordItem(ToolMaterial.DIAMOND, 12, -1, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "the_beginning")))){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.wispyschairmod.the_beginning.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
+    public static final Item OLLIE = registerItem("ollie",
+            new SwordItem(ToolMaterial.DIAMOND, 5, 0, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "ollie")))){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.wispyschairmod.ollie.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
+    public static final Item KNIGHT = registerItem("knight",
+            new SwordItem(ToolMaterial.DIAMOND, 5, 0, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "knight")))){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.wispyschairmod.knight.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
+    public static final Item THE_END = registerItem("the_end",
+            new SwordItem(ToolMaterial.DIAMOND, 12, -1, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "the_end")))){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.wispyschairmod.the_end.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
     public static final Item WARDEN_SANDWICH = registerItem("warden_sandwich", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "warden_sandwich")))
             .food(ModFoodComponents.WARDEN_SANDWICH, ModFoodComponents.WARDEN_SANDWICH_EFFECT)){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
             tooltip.add(Text.translatable("tooltip.wispyschairmod.warden_sandwich.tooltip"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
+
+    public static final Item BURGER = registerItem("burger", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WispysChairMod.MOD_ID, "burger")))
+            .food(ModFoodComponents.BURGER, ModFoodComponents.BURGER_EFFECT)){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.wispyschairmod.burger.tooltip"));
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
@@ -90,9 +140,14 @@ public class ModItems {
             entries.add(FERMI_PARADOX_ANSWER);
             entries.add(PRIZE_WEAPON);
             entries.add(PRIZE_STICK);
+            entries.add(THE_BEGINNING);
+            entries.add(THE_END);
+            entries.add(OLLIE);
+            entries.add(KNIGHT);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(WARDEN_SANDWICH);
+            entries.add(BURGER);
         });
     }
 }

@@ -13,4 +13,10 @@ public class ModFoodComponents {
 
     public static final ConsumableComponent WARDEN_SANDWICH_EFFECT = ConsumableComponents.food()
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.SATURATION, 500), 1.0f)).build();
+
+    public static final FoodComponent BURGER = new FoodComponent.Builder().nutrition(8).saturationModifier(0.8f).build();
+
+    public static final ConsumableComponent BURGER_EFFECT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 500), 1.0f)).build();
+
 }
